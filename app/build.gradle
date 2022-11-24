@@ -62,6 +62,10 @@ dependencies {
 //    implementation 'com.squareup.retrofit2:converter-gson:latest.version'
     implementation "com.github.leonardoxh:retrofit2-livedata-adapter:1.1.2" // livedata-adapter
 
+    implementation 'com.github.CymChad:BaseRecyclerViewAdapterHelper:3.0.10'  // recyclerview
+
+    implementation 'io.github.youth5201314:banner:2.2.2' // banner
+
 
 
 }
