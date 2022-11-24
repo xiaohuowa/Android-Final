@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Lh138</string>
+    <string name="title_home">首页</string>
+    <string name="title_chart">图表</string>
+    <string name="title_video">视频</string>
+    <string name="title_me">我的</string>
+</resources>
