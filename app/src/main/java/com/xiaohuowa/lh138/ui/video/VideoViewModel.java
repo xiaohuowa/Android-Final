@@ -2,18 +2,20 @@ package com.xiaohuowa.lh138.ui.video;
 
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
+import androidx.lifecycle.Transformations;
 import androidx.lifecycle.ViewModel;
+
+import com.github.leonardoxh.livedatacalladapter.Resource;
+import com.xiaohuowa.lh138.bean.NewsBean;
+import com.xiaohuowa.lh138.bean.VideoBean;
+import com.xiaohuowa.lh138.utils.GetRequest;
+import com.xiaohuowa.lh138.utils.NetUtils;
+
+import java.util.List;
 
 public class VideoViewModel extends ViewModel {
 
-    private final MutableLiveData<String> mText;
-
-    public VideoViewModel() {
-        mText = new MutableLiveData<>();
-        mText.setValue("This is video fragment");
-    }
-
-    public LiveData<String> getText() {
-        return mText;
+    public LiveData<List<VideoBean>> getVideoList() {
+        return Transformations.map(NetUtils.get().getVideoList(), Resource::getResource);
     }
 }

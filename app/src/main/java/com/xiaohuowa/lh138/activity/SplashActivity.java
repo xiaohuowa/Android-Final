@@ -25,16 +25,13 @@ public class SplashActivity extends AppCompatActivity {
         Glide.with(this)
                 .load("https://www.baidu.com/img/PCtm_d9c8750bed0b3c7d089fa7d55720d6cf.png")
 //                .load("http://5b0988e595225.cdn.sohucs.com/images/20190831/05de49d16e374e9e997bc97fdf29b0cc.gif")
-                .into(imageView);  // 报错：W/Parcel: Expecting binder but got null!
-        new Handler().postDelayed(new Runnable() {
-            @Override
-            public void run() {
-                if (!isSkip && !isBack) {
-                    // 如果没有跳过，就从闪屏调到main
-                    Intent intent = new Intent(SplashActivity.this, MainActivity.class);
-                    startActivity(intent);
-                    finish();
-                }
+                .into(imageView);
+        new Handler().postDelayed(() -> {
+            if (!isSkip && !isBack) {
+                // 如果没有跳过，就从闪屏调到main
+                Intent intent = new Intent(SplashActivity.this, MainActivity.class);
+                startActivity(intent);
+                finish();
             }
         },5000);
     }

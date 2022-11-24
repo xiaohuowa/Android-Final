@@ -14,25 +14,22 @@ public class LauncherActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        new Handler().postDelayed(new Runnable() {
-            @Override
-            public void run() {
-                SharedPreferences sharedPreferences = getSharedPreferences("settings", MODE_PRIVATE);
-                // 如果是第一次进入的话，进入引导页
-                boolean isFirst = sharedPreferences.getBoolean("isFirst", true);
-                if (isFirst) {
-                    Intent intent = new Intent(LauncherActivity.this, IntroActivity.class);
-                    // 跳转引导页
-                    startActivity(intent);
-                    // 跳完引导页之后，设置标记为false
-//                    sharedPreferences.edit().putBoolean("isFirst", false).apply();
-                } else {
-                    Intent intent = new Intent(LauncherActivity.this, SplashActivity.class);
-                    startActivity(intent);
-                }
-                // 不论成功失败，都要用finish关掉
-                finish();
+        new Handler().postDelayed(() -> {
+            SharedPreferences sharedPreferences = getSharedPreferences("settings", MODE_PRIVATE);
+            // 如果是第一次进入的话，进入引导页
+            boolean isFirst = sharedPreferences.getBoolean("isFirst", true);
+            if (isFirst) {
+                Intent intent = new Intent(LauncherActivity.this, IntroActivity.class);
+                // 跳转引导页
+                startActivity(intent);
+                // 跳完引导页之后，设置标记为false
+                sharedPreferences.edit().putBoolean("isFirst", false).apply();
+            } else {
+                Intent intent = new Intent(LauncherActivity.this, SplashActivity.class);
+                startActivity(intent);
             }
+            // 不论成功失败，都要用finish关掉
+            finish();
         },1000);
         // 预加载
         Glide.with(this)

@@ -22,6 +22,7 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
+    // Java8语法糖支持
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
@@ -48,4 +49,19 @@ dependencies {
 
     implementation 'com.github.bumptech.glide:glide:4.11.0'
     annotationProcessor 'com.github.bumptech.glide:compiler:4.11.0'
+
+    implementation 'io.github.scwang90:refresh-layout-kernel:2.0.5'      //核心必须依赖
+    implementation 'io.github.scwang90:refresh-header-classics:2.0.5'    //经典刷新头
+    implementation 'io.github.scwang90:refresh-header-material:2.0.5'    //谷歌刷新头
+    implementation  'io.github.scwang90:refresh-header-radar:2.0.5'       //雷达刷新头
+    implementation 'io.github.scwang90:refresh-footer-ball:2.0.5'        //球脉冲加载
+    implementation 'io.github.scwang90:refresh-footer-classics:2.0.5'    //经典加载
+
+    implementation 'com.squareup.retrofit2:retrofit:2.9.0'  // retrofit
+    implementation 'com.squareup.retrofit2:converter-gson:2.9.0'  // retrofit 转换JSON工具
+//    implementation 'com.squareup.retrofit2:converter-gson:latest.version'
+    implementation "com.github.leonardoxh:retrofit2-livedata-adapter:1.1.2" // livedata-adapter
+
+
+
 }
