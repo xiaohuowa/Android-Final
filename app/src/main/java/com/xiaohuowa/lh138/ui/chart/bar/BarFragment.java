@@ -29,11 +29,12 @@ import com.github.mikephil.charting.data.LineData;
 import com.github.mikephil.charting.data.LineDataSet;
 import com.github.mikephil.charting.formatter.ValueFormatter;
 import com.xiaohuowa.lh138.R;
+import com.xiaohuowa.lh138.base.BaseFragment2;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class BarFragment extends Fragment {
+public class BarFragment extends BaseFragment2 {
 
 
     @Override

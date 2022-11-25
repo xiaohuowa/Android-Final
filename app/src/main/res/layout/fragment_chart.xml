@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.chart.ChartFragment">
+    tools:context=".ui.chart.ChartFragment"
+    android:background="@drawable/count_bg">
 
     <com.nightonke.boommenu.BoomMenuButton
         android:id="@+id/bmb"
