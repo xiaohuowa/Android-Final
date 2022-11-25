@@ -101,6 +101,28 @@ public class HomeFragment extends Fragment {
             Navigation.findNavController(v).navigate(R.id.action_navigation_home_to_pythonFragment);
         });
 
+        // 菠萝跳转
+        LinearLayout linearLayout_pineapple = headerView.findViewById(R.id.linearLayout_pineapple);
+        linearLayout_pineapple.setOnClickListener(v -> {
+            Bundle bundle = new Bundle();
+            bundle.putString("url", "https://baike.baidu.com/link?url=IcxntEbw-rm0Fq1enaVhoEHkLRvk3zZdohCaOK5eu85dnwL_SnJoabk2bpfpvtJAbwYjJoHKlQqvhXx-brcS2coKhg0wYQ2Ezr5x6KT4WDW");
+            Navigation.findNavController(v).navigate(R.id.action_navigation_home_to_webFragment, bundle);
+        });
+        // 樱桃跳转
+        LinearLayout linearLayout_cherry = headerView.findViewById(R.id.linearLayout_cherry);
+        linearLayout_cherry.setOnClickListener(v -> {
+            Bundle bundle = new Bundle();
+            bundle.putString("url", "https://baike.baidu.com/link?url=O1kpVTnI_94fIs0CG1roTdAbVxhpbMn9tle55IZgKj2q7i__1dDU9xfC1TBOrP-vGSh12XqGk-h1OO7CcXxcz6K2qxLTo-DKa8pQLxosqP_");
+            Navigation.findNavController(v).navigate(R.id.action_navigation_home_to_webFragment, bundle);
+        });
+        // PHP跳转
+        LinearLayout linearLayout_php = headerView.findViewById(R.id.linearLayout_php);
+        linearLayout_php.setOnClickListener(v -> {
+            Bundle bundle = new Bundle();
+            bundle.putString("url", "https://www.php.net/");
+            Navigation.findNavController(v).navigate(R.id.action_navigation_home_to_webFragment, bundle);
+        });
+
         homeAdapter.setOnItemClickListener((adapter, view, position) -> {
             // 传递新闻数据，实现新闻点击跳转
             Bundle bundle = new Bundle();

@@ -12,6 +12,7 @@
         android:layout_height="200dp" />
 
     <LinearLayout
+        android:id="@+id/linearLayout_pineapple"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="horizontal"
@@ -25,14 +26,14 @@
             android:orientation="vertical">
 
             <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                app:srcCompat="@drawable/android_icon" />
+                android:layout_width="43dp"
+                android:layout_height="43dp"
+                app:srcCompat="@drawable/pineapple" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Android" />
+                android:text="菠萝" />
         </LinearLayout>
 
         <LinearLayout
@@ -55,6 +56,7 @@
         </LinearLayout>
 
         <LinearLayout
+            android:id="@+id/linearLayout_cherry"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -62,17 +64,18 @@
             android:orientation="vertical">
 
             <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                app:srcCompat="@drawable/java_icon" />
+                android:layout_width="43dp"
+                android:layout_height="43dp"
+                app:srcCompat="@drawable/cherry" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Java" />
+                android:text="樱桃" />
         </LinearLayout>
 
         <LinearLayout
+            android:id="@+id/linearLayout_php"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"

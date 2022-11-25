@@ -16,6 +16,9 @@
         <action
             android:id="@+id/action_navigation_home_to_webFragment"
             app:destination="@id/webFragment" />
+        <action
+            android:id="@+id/action_navigation_home_to_pineappleFragment"
+            app:destination="@id/pineappleFragment" />
     </fragment>
 
     <fragment
@@ -49,4 +52,9 @@
             app:argType="string"
             android:defaultValue="http://www.baidu.com" />
     </fragment>
+    <fragment
+        android:id="@+id/pineappleFragment"
+        android:name="com.xiaohuowa.lh138.ui.home.pineapple.PineappleFragment"
+        android:label="fragment_pineapple"
+        tools:layout="@layout/fragment_pineapple" />
 </navigation>
