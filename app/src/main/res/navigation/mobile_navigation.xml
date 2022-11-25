@@ -25,7 +25,17 @@
         android:id="@+id/navigation_chart"
         android:name="com.xiaohuowa.lh138.ui.chart.ChartFragment"
         android:label="@string/title_chart"
-        tools:layout="@layout/fragment_chart" />
+        tools:layout="@layout/fragment_chart" >
+        <action
+            android:id="@+id/action_navigation_chart_to_lineFragment"
+            app:destination="@id/lineFragment" />
+        <action
+            android:id="@+id/action_navigation_chart_to_barFragment"
+            app:destination="@id/barFragment" />
+        <action
+            android:id="@+id/action_navigation_chart_to_pieFragment"
+            app:destination="@id/pieFragment" />
+    </fragment>
 
     <fragment
         android:id="@+id/navigation_video"
@@ -57,4 +67,19 @@
         android:name="com.xiaohuowa.lh138.ui.home.pineapple.PineappleFragment"
         android:label="fragment_pineapple"
         tools:layout="@layout/fragment_pineapple" />
+    <fragment
+        android:id="@+id/lineFragment"
+        android:name="com.xiaohuowa.lh138.ui.chart.line.LineFragment"
+        android:label="fragment_line"
+        tools:layout="@layout/fragment_line" />
+    <fragment
+        android:id="@+id/barFragment"
+        android:name="com.xiaohuowa.lh138.ui.chart.bar.BarFragment"
+        android:label="fragment_bar"
+        tools:layout="@layout/fragment_bar" />
+    <fragment
+        android:id="@+id/pieFragment"
+        android:name="com.xiaohuowa.lh138.ui.chart.pie.PieFragment"
+        android:label="fragment_pie"
+        tools:layout="@layout/fragment_pie" />
 </navigation>

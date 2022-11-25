@@ -69,6 +69,9 @@ dependencies {
 
     implementation 'com.github.Justson.AgentWeb:agentweb-core:v5.0.6-androidx' // webview依赖
 
+    implementation 'com.nightonke:boommenu:2.1.1' // 爆炸菜单依赖
+    implementation 'com.github.PhilJay:MPAndroidChart:v3.1.0' // 统计图标库
+
 
 
 }
