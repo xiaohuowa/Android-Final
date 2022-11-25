@@ -9,7 +9,11 @@
         android:id="@+id/navigation_home"
         android:name="com.xiaohuowa.lh138.ui.home.HomeFragment"
         android:label="@string/title_home"
-        tools:layout="@layout/fragment_home" />
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_navigation_home_to_pythonFragment"
+            app:destination="@id/pythonFragment" />
+    </fragment>
 
     <fragment
         android:id="@+id/navigation_chart"
@@ -27,4 +31,9 @@
         android:name="com.xiaohuowa.lh138.ui.me.MeFragment"
         android:label="@string/title_video"
         tools:layout="@layout/fragment_me" />
+    <fragment
+        android:id="@+id/pythonFragment"
+        android:name="com.xiaohuowa.lh138.ui.home.python.PythonFragment"
+        android:label="fragment_python"
+        tools:layout="@layout/fragment_python" />
 </navigation>
