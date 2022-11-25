@@ -17,10 +17,11 @@ import android.view.ViewGroup;
 
 import com.xiaohuowa.lh138.R;
 import com.xiaohuowa.lh138.adapter.PythonAdapter;
+import com.xiaohuowa.lh138.base.BaseFragment2;
 
 import java.nio.file.DirectoryIteratorException;
 
-public class PythonFragment extends Fragment {
+public class PythonFragment extends BaseFragment2 {
 
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container,

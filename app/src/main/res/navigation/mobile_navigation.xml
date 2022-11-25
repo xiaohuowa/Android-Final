@@ -13,6 +13,9 @@
         <action
             android:id="@+id/action_navigation_home_to_pythonFragment"
             app:destination="@id/pythonFragment" />
+        <action
+            android:id="@+id/action_navigation_home_to_webFragment"
+            app:destination="@id/webFragment" />
     </fragment>
 
     <fragment
@@ -36,4 +39,14 @@
         android:name="com.xiaohuowa.lh138.ui.home.python.PythonFragment"
         android:label="fragment_python"
         tools:layout="@layout/fragment_python" />
+    <fragment
+        android:id="@+id/webFragment"
+        android:name="com.xiaohuowa.lh138.ui.home.web.WebFragment"
+        android:label="fragment_web"
+        tools:layout="@layout/fragment_web" >
+        <argument
+            android:name="url"
+            app:argType="string"
+            android:defaultValue="http://www.baidu.com" />
+    </fragment>
 </navigation>

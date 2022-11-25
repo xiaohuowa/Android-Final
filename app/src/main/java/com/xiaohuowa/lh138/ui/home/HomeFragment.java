@@ -101,6 +101,14 @@ public class HomeFragment extends Fragment {
             Navigation.findNavController(v).navigate(R.id.action_navigation_home_to_pythonFragment);
         });
 
+        homeAdapter.setOnItemClickListener((adapter, view, position) -> {
+            // 传递新闻数据，实现新闻点击跳转
+            Bundle bundle = new Bundle();
+            bundle.putString("url", homeAdapter.getData().get(position).getNewsUrl());
+            Navigation.findNavController(view).navigate(R.id.action_navigation_home_to_webFragment, bundle);
+        });
+
+
         return root;
     }
 
@@ -113,6 +121,13 @@ public class HomeFragment extends Fragment {
                 Log.i("Ads:", newsBean.getNewsName());
             }*/
             banner.setAdapter(new ImageTitleNumAdapter(newsBeans));
+            // 点击banner广告
+            banner.setOnBannerListener((data, position) -> {
+                // 传递新闻数据，实现新闻点击跳转
+                Bundle bundle = new Bundle();
+                bundle.putString("url", ((NewsBean)data).getNewsUrl());
+                Navigation.findNavController(banner).navigate(R.id.action_navigation_home_to_webFragment, bundle);
+            });
         });
     }
 
