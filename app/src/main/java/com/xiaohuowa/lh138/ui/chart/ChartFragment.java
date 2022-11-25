@@ -43,6 +43,9 @@ public class ChartFragment extends Fragment {
                                 case 2:
                                     Navigation.findNavController(root).navigate(R.id.action_navigation_chart_to_pieFragment);
                                     break;
+                                case 3:
+                                    Navigation.findNavController(root).navigate(R.id.action_navigation_chart_to_radarFragment);
+                                    break;
                             }
                         });
                 bmb.addBuilder(builder);

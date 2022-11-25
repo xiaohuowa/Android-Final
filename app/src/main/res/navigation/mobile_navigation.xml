@@ -35,6 +35,9 @@
         <action
             android:id="@+id/action_navigation_chart_to_pieFragment"
             app:destination="@id/pieFragment" />
+        <action
+            android:id="@+id/action_navigation_chart_to_radarFragment"
+            app:destination="@id/radarFragment" />
     </fragment>
 
     <fragment
@@ -82,4 +85,9 @@
         android:name="com.xiaohuowa.lh138.ui.chart.pie.PieFragment"
         android:label="fragment_pie"
         tools:layout="@layout/fragment_pie" />
+    <fragment
+        android:id="@+id/radarFragment"
+        android:name="com.xiaohuowa.lh138.ui.chart.radar.RadarFragment"
+        android:label="fragment_radar"
+        tools:layout="@layout/fragment_radar" />
 </navigation>
