@@ -41,7 +41,11 @@
         android:id="@+id/navigation_video"
         android:name="com.xiaohuowa.lh138.ui.video.VideoFragment"
         android:label="@string/title_video"
-        tools:layout="@layout/fragment_video" />
+        tools:layout="@layout/fragment_video" >
+        <action
+            android:id="@+id/action_navigation_video_to_videoDetailFragment"
+            app:destination="@id/videoDetailFragment" />
+    </fragment>
     <fragment
         android:id="@+id/navigation_me"
         android:name="com.xiaohuowa.lh138.ui.me.MeFragment"
@@ -82,4 +86,22 @@
         android:name="com.xiaohuowa.lh138.ui.chart.pie.PieFragment"
         android:label="fragment_pie"
         tools:layout="@layout/fragment_pie" />
+    <fragment
+        android:id="@+id/videoDetailFragment"
+        android:name="com.xiaohuowa.lh138.ui.video.detail.VideoDetailFragment"
+        android:label="fragment_video_detail"
+        tools:layout="@layout/fragment_video_detail" >
+        <argument
+            android:name="image"
+            app:argType="string" />
+        <argument
+            android:name="name"
+            app:argType="string" />
+        <argument
+            android:name="intro"
+            app:argType="string" />
+        <argument
+            android:name="list"
+            app:argType="string[]" />
+    </fragment>
 </navigation>

@@ -72,6 +72,8 @@ dependencies {
     implementation 'com.nightonke:boommenu:2.1.1' // 爆炸菜单依赖
     implementation 'com.github.PhilJay:MPAndroidChart:v3.1.0' // 统计图标库
 
+    implementation 'com.github.CarGuo.GSYVideoPlayer:GSYVideoPlayer:v8.3.4-release-jitpack' // 视频播放器
+
 
 
 }
