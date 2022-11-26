@@ -1,4 +1,4 @@
-package com.xiaohuowa.lh138.utils;
+package com.xiaohuowa.lh138.ui.utils;
 
 import com.github.leonardoxh.livedatacalladapter.LiveDataCallAdapterFactory;
 import com.github.leonardoxh.livedatacalladapter.LiveDataResponseBodyConverterFactory;

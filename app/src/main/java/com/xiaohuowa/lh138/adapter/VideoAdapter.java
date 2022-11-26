@@ -1,18 +1,16 @@
 package com.xiaohuowa.lh138.adapter;
 
-import android.graphics.drawable.Drawable;
 import android.widget.ImageView;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
 import com.bumptech.glide.Glide;
-import com.bumptech.glide.request.target.ViewTarget;
 import com.chad.library.adapter.base.BaseQuickAdapter;
 import com.chad.library.adapter.base.viewholder.BaseViewHolder;
 import com.xiaohuowa.lh138.R;
 import com.xiaohuowa.lh138.bean.VideoBean;
-import com.xiaohuowa.lh138.utils.NetUtils;
+import com.xiaohuowa.lh138.ui.utils.NetUtils;
 
 import java.util.List;
 

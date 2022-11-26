@@ -1,15 +1,12 @@
 package com.xiaohuowa.lh138.ui.video;
 
 import androidx.lifecycle.LiveData;
-import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.Transformations;
 import androidx.lifecycle.ViewModel;
 
 import com.github.leonardoxh.livedatacalladapter.Resource;
-import com.xiaohuowa.lh138.bean.NewsBean;
 import com.xiaohuowa.lh138.bean.VideoBean;
-import com.xiaohuowa.lh138.utils.GetRequest;
-import com.xiaohuowa.lh138.utils.NetUtils;
+import com.xiaohuowa.lh138.ui.utils.NetUtils;
 
 import java.util.List;
 

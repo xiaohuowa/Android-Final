@@ -9,7 +9,7 @@ import com.chad.library.adapter.base.BaseMultiItemQuickAdapter;
 import com.chad.library.adapter.base.viewholder.BaseViewHolder;
 import com.xiaohuowa.lh138.R;
 import com.xiaohuowa.lh138.bean.NewsBean;
-import com.xiaohuowa.lh138.utils.NetUtils;
+import com.xiaohuowa.lh138.ui.utils.NetUtils;
 
 import java.util.List;
 

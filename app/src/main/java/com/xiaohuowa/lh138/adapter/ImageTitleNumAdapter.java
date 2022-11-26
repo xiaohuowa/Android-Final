@@ -12,7 +12,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.bumptech.glide.Glide;
 import com.xiaohuowa.lh138.R;
 import com.xiaohuowa.lh138.bean.NewsBean;
-import com.xiaohuowa.lh138.utils.NetUtils;
+import com.xiaohuowa.lh138.ui.utils.NetUtils;
 import com.youth.banner.adapter.BannerAdapter;
 
 import java.util.List;

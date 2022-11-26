@@ -1,4 +1,4 @@
-package com.xiaohuowa.lh138.utils;
+package com.xiaohuowa.lh138.ui.utils;
 
 import androidx.lifecycle.LiveData;
 

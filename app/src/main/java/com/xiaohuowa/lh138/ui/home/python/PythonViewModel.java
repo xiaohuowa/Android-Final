@@ -5,9 +5,8 @@ import androidx.lifecycle.Transformations;
 import androidx.lifecycle.ViewModel;
 
 import com.github.leonardoxh.livedatacalladapter.Resource;
-import com.xiaohuowa.lh138.bean.NewsBean;
 import com.xiaohuowa.lh138.bean.PythonBean;
-import com.xiaohuowa.lh138.utils.NetUtils;
+import com.xiaohuowa.lh138.ui.utils.NetUtils;
 
 import java.util.List;
 

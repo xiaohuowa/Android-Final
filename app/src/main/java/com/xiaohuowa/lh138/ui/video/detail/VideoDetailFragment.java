@@ -3,7 +3,6 @@ package com.xiaohuowa.lh138.ui.video.detail;
 import android.content.res.Configuration;
 import android.os.Bundle;
 
-import androidx.annotation.FloatRange;
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.viewpager2.adapter.FragmentStateAdapter;
@@ -14,7 +13,6 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
-import android.widget.TableLayout;
 
 import com.bumptech.glide.Glide;
 import com.google.android.material.tabs.TabLayout;
@@ -26,7 +24,7 @@ import com.shuyu.gsyvideoplayer.listener.LockClickListener;
 import com.shuyu.gsyvideoplayer.video.StandardGSYVideoPlayer;
 import com.xiaohuowa.lh138.R;
 import com.xiaohuowa.lh138.base.BaseFragment2;
-import com.xiaohuowa.lh138.utils.NetUtils;
+import com.xiaohuowa.lh138.ui.utils.NetUtils;
 
 import java.util.ArrayList;
 import java.util.List;
