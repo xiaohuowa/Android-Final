@@ -4,6 +4,7 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -44,6 +45,10 @@ public class MeFragment extends Fragment {
             textView.setText("点击登录");
             isLogin = false;
         }
+        // 地图
+        LinearLayout linearLayout_map = root.findViewById(R.id.linearLayout_map);
+        // 地图的点击跳转
+        linearLayout_map.setOnClickListener(v -> Navigation.findNavController(v).navigate(R.id.action_navigation_me_to_mapFragment));
 
         return root;
     }
