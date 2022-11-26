@@ -21,8 +21,10 @@ public class VideoListFragment extends Fragment {
 
     private final VideoDetailFragment videoDetailFragment;
     private List<String> list;
-    private String url0 = "http://7xjmzj.com1.z0.glb.clouddn.com/20171026175005_JObCxCE2.mp4";
-    private String url1 = "http://clips.vorwaerts-gmbh.de/big_buck_bunny.mp4";
+//    private String url0 = "http://7xjmzj.com1.z0.glb.clouddn.com/20171026175005_JObCxCE2.mp4";
+    private String url0 = "http://192.168.123.90:8080/topline/video/makabaka.flv";
+//    private String url1 = "http://clips.vorwaerts-gmbh.de/big_buck_bunny.mp4";
+    private String url1 = "http://192.168.123.90:8080/topline/video/trick.flv";
 
     public VideoListFragment(String[] list, VideoDetailFragment videoDetailFragment) {
         this.list = Arrays.asList(list);
