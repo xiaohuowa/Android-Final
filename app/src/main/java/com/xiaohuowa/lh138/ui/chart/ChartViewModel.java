@@ -17,9 +17,9 @@ public class ChartViewModel extends ViewModel {
     public ChartViewModel() {
         boomMenuItemBeanList = new MutableLiveData<>();
         List<BoomMenuItemBean> list = new ArrayList<BoomMenuItemBean>();
-        String[] texts={"Java","PHP","Android","黑马程序员.Python",
-                "黑马程序员.C/C++","黑马程序员.iOS","黑马程序员.前端与移动开发",
-                "黑马程序员.UI设计","黑马程序员.网络营销"};
+        String[] texts={"Java","PHP","Android","Python",
+                "C/C++","iOS","前端与移动开发",
+                "UI设计","网络营销"};
         int[] imageId={R.drawable.bat, R.drawable.bear,R.drawable.bee,
                 R.drawable.butterfly,R.drawable.cat,R.drawable.dolphin,R.drawable.eagle,
                 R.drawable.horse,R.drawable.elephant};

@@ -7,7 +7,8 @@ import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
 
 public class NetUtils {
-    public static final String BASE_URL = "http://192.168.123.90:8080/topline/";
+    public static final String BASE_URL = "https://gitee.com/xiaohuowa/android-final-static/raw/master/";
+//    public static final String BASE_URL = "http://192.168.31.201:8080/topline/";
 
 
     public static GetRequest get() {

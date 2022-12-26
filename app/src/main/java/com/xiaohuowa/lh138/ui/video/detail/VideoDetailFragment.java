@@ -37,7 +37,8 @@ public class VideoDetailFragment extends BaseFragment2 {
     private boolean isPause;
 
     //private OrientationUtils orientationUtils;
-    private String url = "http://7xjmzj.com1.z0.glb.clouddn.com/20171026175005_JObCxCE2.mp4";
+//    private String url = "http://7xjmzj.com1.z0.glb.clouddn.com/20171026175005_JObCxCE2.mp4";
+    private String url = "https://imgs-qn.51miz.com/preview/video/00/00/16/73/V-167322-E734F364.mp4";
     private GSYVideoOptionBuilder gsyVideoOption;
 
 

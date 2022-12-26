@@ -62,7 +62,6 @@ dependencies {
 
     implementation 'com.squareup.retrofit2:retrofit:2.9.0'  // retrofit
     implementation 'com.squareup.retrofit2:converter-gson:2.9.0'  // retrofit 转换JSON工具
-//    implementation 'com.squareup.retrofit2:converter-gson:latest.version'
     implementation "com.github.leonardoxh:retrofit2-livedata-adapter:1.1.2" // livedata-adapter
 
     implementation 'com.github.CymChad:BaseRecyclerViewAdapterHelper:3.0.10'  // recyclerview
